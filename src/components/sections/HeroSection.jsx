@@ -6,7 +6,6 @@ const HeroSection = () => {
   return (
     <section className="relative w-full bg-gradient-to-b from-[#0E1217] via-[#0c331160] to-[#0E1217] text-white py-20 px-6 md:px-12">
       <div className="max-w-5xl mx-auto text-center">
-        
         {/* Heading */}
         <h1
           className="font-bold font-caudex text-[30px] md:text-[60px] leading-[40px] md:leading-[70px] text-white tracking-[0.005em] text-center">

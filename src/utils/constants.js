@@ -1,4 +1,5 @@
-import { FaDiscord, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaDiscord, FaTwitter, FaInstagram, FaYoutube,FaUser, FaLayerGroup } from "react-icons/fa";
+import { MdWork, MdPeople } from "react-icons/md";
 
 export const footerData = {
   companyName: "Blackrose Club",
@@ -54,7 +55,7 @@ export const cards = [
       "This feature is not available to everyone, but you can access it by requesting us.",
     link: "#",
     list: [],
-    position: "top-10 left", // Top-left
+    position: "top-10 left-0", // Top-left
   },
   {
     title: "Become a Club Member",
@@ -77,6 +78,35 @@ export const cards = [
       "Get 20% of the profits you generate in your virtual shop",
       "Eligible for profit distribution from advertising and member pool",
     ],
-    position: "bottom-0 right-1/2", // Bottom-right
+    position: "top-1/2 right-0", // Bottom-right
+  },
+];
+
+
+
+export const services = [
+  {
+    title: "Individualisation",
+    icon: <FaUser className="text-xl text-white" />,
+    description:
+      "Unlock Limitless Possibilities In The Metaverse - A Realm Merging Business And Leisure. Be Among The Pioneers.",
+  },
+  {
+    title: "User Created Content",
+    icon: <FaLayerGroup className="text-xl text-white" />,
+    description:
+      "Unlock Limitless Possibilities In The Metaverse - A Realm Merging Business And Leisure. Be Among The Pioneers.",
+  },
+  {
+    title: "Income Opportunities",
+    icon: <MdWork className="text-xl text-white" />,
+    description:
+      "Unlock Limitless Possibilities In The Metaverse - A Realm Merging Business And Leisure. Be Among The Pioneers.",
+  },
+  {
+    title: "Social Media",
+    icon: <MdPeople className="text-xl text-white" />,
+    description:
+      "Unlock Limitless Possibilities In The Metaverse - A Realm Merging Business And Leisure. Be Among The Pioneers.",
   },
 ];
