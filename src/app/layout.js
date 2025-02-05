@@ -53,6 +53,7 @@ const geistMono = Geist_Mono({
 
 // Metadata for SEO optimization
 export const metadata = {
+  metadataBase: new URL("https://www.demo.com"), // Set this to your actual site URL
   title: "Blackrose Club",
   description: "You can shop your favorite products, join and organize cultural and sports events, sell your products in your own metaverse, and gain yield in an innovative growth market.",
   openGraph: {
@@ -73,22 +74,13 @@ export const metadata = {
     card: "summary_large_image",
     title: "Blackrose Club",
     description: "Join the Blackrose Club for products, events, and metaverse experiences.",
-    images: ["/images/vr-user.png",],
+    images: ["/images/vr-user.png"],
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-            <Head>
-        {/* Meta Tags */}
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.blackroseclub.com/og-image.png" />
-        <meta property="og:url" content="https://www.blackroseclub.com" />
-        <link rel="canonical" href="https://www.blackroseclub.com" />
-      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${caudex.variable} ${bakbakOne.variable} ${orbitron.variable} ${poppins.variable} antialiased`}
       >

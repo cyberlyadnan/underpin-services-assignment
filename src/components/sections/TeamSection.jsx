@@ -2,45 +2,7 @@
 import Image from "next/image";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-const teamMembers = [
-  {
-    name: "Nikolaus Schauersberger",
-    desc: "We provide a secure and efficient key management solution, ensuring convenient access and peace of mind for individuals and businesses.",
-    role: "Founder / CEO",
-    image: "/images/team1.png",
-    positions:"md:bottom-20 md:left-40",
-  },
-  {
-    name: "John Doe",
-    desc: "We provide a secure and efficient key management solution, ensuring convenient access and peace of mind for individuals and businesses.",
-    role: "CTO",
-    image: "/images/team2.png",
-    positions:"md:top-1/4 md:left-80",
-
-  },
-  {
-    name: "Jane Smith",
-    desc: "We provide a secure and efficient key management solution, ensuring convenient access and peace of mind for individuals and businesses.",
-    role: "COO",
-    image: "/images/team3.png",
-    positions:"md:top-0 md:left-1/2 md:-translate-x-1/2",
-  },
-  {
-    name: "Michael Brown",
-    desc: "We provide a secure and efficient key management solution, ensuring convenient access and peace of mind for individuals and businesses.",
-    role: "CFO",
-    image: "/images/team4.png",
-    positions:"md:top-1/4 md:right-80",
-  },
-  {
-    name: "Alice Johnson",
-    role: "CMO",
-    image: "/images/team5.png",
-    positions:"md:bottom-20 md:right-40",
-  },
-];
-
-export default function TeamSection() {
+export default function TeamSection({ teamMembers,title, desc }) {
   return (
     <section className="relative bg-custom-gradient text-white pt-16 px-4 text-center">
       {/* Background Image */}
@@ -64,23 +26,17 @@ export default function TeamSection() {
       </div>
 
       <div>
-        <h2 className="text-xl md:text-4xl font-caudex font-semibold mb-4">
-          Team Members
+        <h2 className="text-2xl md:text-4xl font-caudex font-semibold mb-4">
+          {title}
         </h2>
         <p className="max-w-3xl font-poppins mx-auto mb-8">
-          We provide a secure and efficient key management solution, ensuring
-          convenient access and peace of mind for individuals and businesses.
-          Simplify your key handling with our reliable key duplication, storage,
-          and tracking services.
+          {desc}
         </p>
       </div>
 
       <div className="relative h-[90vh] flex justify-center mt-8">
         {teamMembers.map((member, index) => (
-          <div
-            key={index}
-            className={`absolute ${member.positions} transform`}
-          >
+          <div key={index} className={`absolute ${member.positions} transform`}>
             <Image
               src={member.image}
               alt={member.name}

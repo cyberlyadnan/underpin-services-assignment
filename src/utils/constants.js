@@ -146,3 +146,75 @@ export const marketOpportunitiesData = {
   ],
 };
 
+
+export const heroData = {
+  heading: "Seize Early Opportunities In The Metaverses For Business & Leisure",
+  subtext:
+    "You can shop your favorite products, join and organize cultural and sports events, sell your products in your own metaverse, and gain yield in an innovative growth market.",
+  buttonLinks: [
+    {
+      href: "/services",
+      label: "Explore Services",
+      style: "bg-themeColor text-black",
+    },
+    {
+      href: "/contact",
+      label: "Contact us",
+      style: "border border-gray-400 text-white",
+    },
+  ],
+};
+
+export const servicesDetails = {
+  title:"Our Key Services",
+  description:"We provide a secure and efficient key management solution, ensuring convenient access and peace of mind for individuals and businesses. Simplify your key handling with our reliable key duplication, storage, and tracking services.",
+  buttonText:"Explore Services"
+}
+
+export const teamMembers = {
+  title:"Team Members",
+  description:"We provide a secure and efficient key management solution, ensuring convenient access and peace of mind for individuals and businesses.Simplify your key handling with our reliable key duplication, storage, and tracking services.",
+  teamMembers:[
+
+  {
+    name: "Nikolaus Schauersberger",
+    desc: "We provide a secure and efficient key management solution, ensuring convenient access and peace of mind for individuals and businesses.",
+    role: "Founder / CEO",
+    image: "/images/team1.png",
+    positions:"md:bottom-20 md:left-40",
+  },
+  {
+    name: "John Doe",
+    desc: "We provide a secure and efficient key management solution, ensuring convenient access and peace of mind for individuals and businesses.",
+    role: "CTO",
+    image: "/images/team2.png",
+    positions:"md:top-1/4 md:left-80",
+
+  },
+  {
+    name: "Jane Smith",
+    desc: "We provide a secure and efficient key management solution, ensuring convenient access and peace of mind for individuals and businesses.",
+    role: "COO",
+    image: "/images/team3.png",
+    positions:"top-0 left-1/2 -translate-x-1/2",
+  },
+  {
+    name: "Michael Brown",
+    desc: "We provide a secure and efficient key management solution, ensuring convenient access and peace of mind for individuals and businesses.",
+    role: "CFO",
+    image: "/images/team4.png",
+    positions:"top-1/4 right-80",
+  },
+  {
+    name: "Alice Johnson",
+    role: "CMO",
+    image: "/images/team5.png",
+    positions:"bottom-20 right-40",
+  },
+]}
+
+export const documentsSectionData = {
+  documents: documents,
+  title: "Whitepaper & Pitch Deck",
+  desc: "Blackrose Club targets the most active and technology-savvy target group in the DACH region and will later expand to serve the global market.",
+};

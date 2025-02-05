@@ -23,3 +23,29 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+ @keyframes borderPulse {
+  0% {
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-color: transparent;
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(225deg);
+    background-color: #5bff6e77; /* Your border color */
+  }
+}
+
+.animate-border-pulse {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  height: 600px;
+  width: 200px;
+  border: 2px solid transparent;
+  animation: borderPulse 3s linear infinite;
+  overflow: hidden;
+}
+

@@ -16,7 +16,7 @@ export default {
         themeFont:["Bakbak One","serif"],
       },
       backgroundImage: {
-        "custom-gradient": "linear-gradient(to right, #0E1217, #0c331160, #0E1217)",
+        "custom-gradient": "linear-gradient(180deg, #0E1217, #0c331160, #0E1217)",
       },
       colors: {
         background: "var(--background)",

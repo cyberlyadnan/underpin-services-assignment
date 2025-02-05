@@ -1,9 +1,8 @@
-import { marketOpportunitiesData } from "@/utils/constants";
 import Image from "next/image";
 
 
 
-const MarketOpportunities = () => {
+const MarketOpportunities = ({marketOpportunitiesData}) => {
   return (
     <section className="relative w-full flex items-center justify-center bg-cover bg-center px-6 py-6 md:py-12 bg-custom-gradient">
       {/* Background Images */}

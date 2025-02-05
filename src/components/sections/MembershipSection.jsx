@@ -1,10 +1,8 @@
 "use client";
-
-import { cards } from "@/utils/constants";
 import Image from "next/image";
 import Link from "next/link";
 
-const MembershipSection = () => {
+const MembershipSection = ({cards,buttonText="See Explained →"}) => {
   return (
     <section className="relative block w-full py-12 px-6 md:px-12 bg-custom-gradient text-white">
       {/* Background Image */}
@@ -41,7 +39,7 @@ const MembershipSection = () => {
               href={card.link}
               className="inline-block mt-4 text-green-400 font-medium hover:underline"
             >
-              See Explained →
+              {buttonText}
             </Link>
           </div>
         ))}

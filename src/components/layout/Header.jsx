@@ -3,9 +3,11 @@ import { contactButtonText, footerData, menuItems } from "@/utils/constants";
 import Image from "next/image";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className="relative bg-[#141B22] font-themeFont py-4">
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
@@ -43,19 +45,27 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <ul className="md:hidden absolute top-full left-0 right-0 flex flex-col items-center space-y-4 py-4 text-white bg-[#0D0D0D] uppercase text-sm z-10">
-          {menuItems.map((item, index) => (
-            <li key={index} className="hover:text-themeColor cursor-pointer">
-              {item.name}
-            </li>
-          ))}
-          <button className="bg-themeColor text-black px-4 py-2 rounded-full hover:opacity-90">
-            {contactButtonText}
-          </button>
-        </ul>
-      )}
+      {/* Mobile Menu with Animation */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.ul
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.3 }}
+            className="md:hidden absolute top-full left-0 right-0 flex flex-col items-center space-y-4 py-4 text-white bg-[#0D0D0D] uppercase text-sm z-10"
+          >
+            {menuItems.map((item, index) => (
+              <li key={index} className="hover:text-themeColor cursor-pointer">
+                {item.name}
+              </li>
+            ))}
+            <button className="bg-themeColor text-black px-4 py-2 rounded-full hover:opacity-90">
+              {contactButtonText}
+            </button>
+          </motion.ul>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };
