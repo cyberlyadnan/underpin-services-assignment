@@ -15,6 +15,9 @@ export default {
         clash: ['var(--font-clash-display)', 'sans-serif'],
         themeFont:["Bakbak One","serif"],
       },
+      backgroundImage: {
+        "custom-gradient": "linear-gradient(to right, #0E1217, #0c331160, #0E1217)",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

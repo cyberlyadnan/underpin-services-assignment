@@ -1,81 +1,117 @@
-"use client"
+"use client";
 import Image from "next/image";
-import { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const teamMembers = [
   {
     name: "Nikolaus Schauersberger",
+    desc: "We provide a secure and efficient key management solution, ensuring convenient access and peace of mind for individuals and businesses.",
     role: "Founder / CEO",
-    image: "/images/ceo.png", // Update with actual image paths
+    image: "/images/team1.png",
+    positions:"md:bottom-20 md:left-40",
   },
   {
     name: "John Doe",
+    desc: "We provide a secure and efficient key management solution, ensuring convenient access and peace of mind for individuals and businesses.",
     role: "CTO",
-    image: "/images/cto.png",
+    image: "/images/team2.png",
+    positions:"md:top-1/4 md:left-80",
+
   },
   {
     name: "Jane Smith",
+    desc: "We provide a secure and efficient key management solution, ensuring convenient access and peace of mind for individuals and businesses.",
     role: "COO",
-    image: "/images/coo.png",
+    image: "/images/team3.png",
+    positions:"md:top-0 md:left-1/2 md:-translate-x-1/2",
   },
   {
     name: "Michael Brown",
+    desc: "We provide a secure and efficient key management solution, ensuring convenient access and peace of mind for individuals and businesses.",
     role: "CFO",
-    image: "/images/cfo.png",
+    image: "/images/team4.png",
+    positions:"md:top-1/4 md:right-80",
   },
   {
     name: "Alice Johnson",
     role: "CMO",
-    image: "/images/cmo.png",
+    image: "/images/team5.png",
+    positions:"md:bottom-20 md:right-40",
   },
 ];
 
 export default function TeamSection() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? teamMembers.length - 1 : prevIndex - 1
-    );
-  };
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === teamMembers.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
   return (
-    <section className="relative bg-gradient-to-b from-[#0E1217] via-[#111827] to-[#0E1217] text-white py-16 px-4 text-center">
+    <section className="relative bg-custom-gradient text-white pt-16 px-4 text-center">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/crystals.png" // Update with the correct path
+          src="/images/crystals.png"
           alt="Background Lines"
           layout="fill"
           objectFit="cover"
           className="opacity-70"
         />
       </div>
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[70%] h-[50%] bottom-1/3 inset-0">
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[70%] h-[50%]">
         <Image
-          src="/images/semi-circle.png" // Update with the correct path
-          alt="Background Lines"
+          src="/images/semi-circle.png"
+          alt="Dotted Circle"
           layout="fill"
           objectFit="cover"
           className="opacity-50"
         />
       </div>
-      <h2 className="text-3xl font-semibold mb-4">Team Members</h2>
-      <p className="max-w-2xl mx-auto mb-8">
-        We provide a secure and efficient key management solution, ensuring
-        convenient access and peace of mind for individuals and businesses.
-        Simplify your key handling with our reliable key duplication, storage,
-        and tracking services.
-      </p>
 
-      
+      <div>
+        <h2 className="text-xl md:text-4xl font-caudex font-semibold mb-4">
+          Team Members
+        </h2>
+        <p className="max-w-3xl font-poppins mx-auto mb-8">
+          We provide a secure and efficient key management solution, ensuring
+          convenient access and peace of mind for individuals and businesses.
+          Simplify your key handling with our reliable key duplication, storage,
+          and tracking services.
+        </p>
+      </div>
+
+      <div className="relative h-[90vh] flex justify-center mt-8">
+        {teamMembers.map((member, index) => (
+          <div
+            key={index}
+            className={`absolute ${member.positions} transform`}
+          >
+            <Image
+              src={member.image}
+              alt={member.name}
+              width={100}
+              height={100}
+              className="shadow-lg"
+            />
+          </div>
+        ))}
+
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 text-center">
+          <h3 className="text-[#24FF00] text-xl font-caudex font-semibold">
+            {teamMembers[0].name}
+          </h3>
+          <p className="text-gray-300 mt-1 font-poppins">
+            {teamMembers[0].role}
+          </p>
+          <p className="text-gray-300 mt-2 font-poppins">
+            {teamMembers[0].desc}
+          </p>
+
+          <div className="flex justify-center mt-6 space-x-4">
+            <button className="bg-gray-700 p-3 rounded-full text-white hover:bg-gray-600">
+              <FaArrowLeft />
+            </button>
+            <button className="bg-gray-700 p-3 rounded-full text-white hover:bg-gray-600">
+              <FaArrowRight />
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

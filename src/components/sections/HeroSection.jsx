@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full bg-gradient-to-b from-[#0E1217] via-[#0c331160] to-[#0E1217] text-white py-20 px-6 md:px-12">
+    <section className="relative w-full bg-custom-gradient text-white py-20 px-6 md:px-12">
       <div className="max-w-5xl mx-auto text-center">
         {/* Heading */}
         <h1

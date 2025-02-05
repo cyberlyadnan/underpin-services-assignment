@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function KeyServices() {
   return (
-    <section className="relative bg-gradient-to-b from-[#0E1217] via-[#0c331160] to-[#0E1217] w-full py-16 px-6 md:px-16 text-white overflow-hidden flex flex-col md:flex-row items-center md:items-start">
+    <section className="relative bg-custom-gradient w-full py-16 px-6 md:px-16 text-white overflow-hidden flex flex-col md:flex-row items-center md:items-start">
       {/* Background Images */}
       <div className="absolute inset-0">
         <Image

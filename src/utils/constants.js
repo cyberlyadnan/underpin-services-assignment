@@ -4,7 +4,7 @@ import { MdWork, MdPeople } from "react-icons/md";
 export const footerData = {
   companyName: "Blackrose Club",
   description:
-    "Blackrose Club targets the most active and technology-savvy target group in the DACH region and will later expand to serve the global market.",
+    "Blackrose Club targets the most active and technology savvy target group in the DACH region and will later expand to serve the global market.Blackrose Club targets the most active and technology savvy target group in the DACH region and will later expand to serve the global market.",
   socialLinks: [
     { icon: FaDiscord, href: "#" },
     { icon: FaTwitter, href: "#" },
@@ -66,7 +66,7 @@ export const cards = [
       "1 workshop on job opportunities in the Metaverse",
       "Permission to enter the virtual Blackrose Club World",
     ],
-    position: "top-1/3 left-1/2 -translate-x-1/2", // Centered horizontally
+    position: "top-1/3  left-1/2 -translate-x-1/2", // Centered horizontally
   },
   {
     title: "Become a Shop Owner",
@@ -78,7 +78,7 @@ export const cards = [
       "Get 20% of the profits you generate in your virtual shop",
       "Eligible for profit distribution from advertising and member pool",
     ],
-    position: "top-1/2 right-0", // Bottom-right
+    position: "top-0 right-0", // Bottom-right
   },
 ];
 
@@ -110,3 +110,39 @@ export const services = [
       "Unlock Limitless Possibilities In The Metaverse - A Realm Merging Business And Leisure. Be Among The Pioneers.",
   },
 ];
+
+export const documents = [
+  {
+    title: "White Paper EN",
+    description: "In the Blackrose Club ecosystem, the virtual and physical worlds come together.",
+    image: "/images/img1.png", // Replace with actual image paths
+  },
+  {
+    title: "White Paper DE",
+    description: "In the Blackrose Club ecosystem, the virtual and physical worlds come together.",
+    image: "/images/img2.png", // Replace with actual image paths
+  },
+  {
+    title: "Pitchdeck EN",
+    description: "In the Blackrose Club ecosystem, the virtual and physical worlds come together.",
+    image: "/images/img3.png", // Replace with actual image paths
+  },
+  {
+    title: "Pitchdeck DE",
+    description: "In the Blackrose Club ecosystem, the virtual and physical worlds come together.",
+    image: "/images/img4.png", // Replace with actual image paths
+  },
+];
+
+
+export const marketOpportunitiesData = {
+  title: "Market Opportunities",
+  description:
+    "Blackrose Club Targets The Most Active And Technology Savvy Target Group In The DACH Region And Will Later Expand To Serve The Global Market.",
+  points: [
+    "Market - Around 66 Million E-Commerce Customers In The DACH Region Spent Over 100 Billion Euros On Online Purchases In 2021. Most Popular Orders Were Clothes, Shoes, Food, And Beauty Products.",
+    "Target Group - The Percentage Of Internet Users In The EU Who Order Products Online Is Increasing, Especially Among 16-24 Years Old.",
+    "Behavior - Consumers Prefer Online Over Physical Orders Due To Convenience, Variety, Competitive Prices, And 24/7 Access.",
+  ],
+};
+

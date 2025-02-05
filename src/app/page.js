@@ -4,6 +4,7 @@ import KeyServices from "@/components/sections/KeyServices";
 import MarketOpportunities from "@/components/sections/MarketOpportunities";
 import MembershipSection from "@/components/sections/MembershipSection";
 import TeamSection from "@/components/sections/TeamSection";
+import NewsletterSection from "../components/sections/NewsletterSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <MarketOpportunities />
         <TeamSection />
         <DocumentsSection />
+        <NewsletterSection/>
       </main>
     </>
   );
