@@ -9,21 +9,21 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="relative bg-[#141B22] font-themeFont py-4">
+    <nav className="relative bg-[#141B22] font-bakbak py-4">
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
         {/* Left Side: Logo */}
         <div>
-          <div className="absolute left-0 top-0 h-full w-[40%] max-500:w-[50%] md:w-[26%] bg-themeColor rounded-br-full"></div>
-          <div className="relative flex items-center gap-2 px-4">
+          <div className="absolute left-0 top-0 h-full w-[40%] max-500:w-[50%] md:w-[23%] bg-themeColor rounded-br-full"></div>
+          <div className="relative flex items-center gap-2">
             <Image src="/logo/Logo-black.svg" width={30} height={30} alt={footerData.companyName} />
             <span className="text-black font-semibold">{footerData.companyName}</span>
           </div>
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-6 text-white uppercase text-sm">
+        <ul className="hidden md:flex space-x-6 text-white uppercase text-md">
           {menuItems.map((item, index) => (
-            <li key={index} className="hover:text-themeColor cursor-pointer">
+            <li key={index} className="hover:text-themeColor  cursor-pointer">
               {item.name}
             </li>
           ))}
