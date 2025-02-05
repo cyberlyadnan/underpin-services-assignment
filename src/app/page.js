@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <>
         <HeroSection heroData={heroData}/>
-        <Demo/>
         <MembershipSection cards={cards}/>
         <KeyServices services={services} servicesDetails={servicesDetails}/>
         <MarketOpportunities marketOpportunitiesData={marketOpportunitiesData}/>
