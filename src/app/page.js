@@ -5,8 +5,7 @@ import MarketOpportunities from "@/components/sections/MarketOpportunities";
 import MembershipSection from "@/components/sections/MembershipSection";
 import TeamSection from "@/components/sections/TeamSection";
 import NewsletterSection from "../components/sections/NewsletterSection";
-import { cards, documents, documentsSectionData, heroData, marketOpportunitiesData, services, servicesDetails, teamMembers } from "../utils/constants";
-import Demo from "../components/sections/Demo";
+import { cards, documentsSectionData, heroData, marketOpportunitiesData, services, servicesDetails, teamMembers } from "../utils/constants";
 
 export default function Home() {
   return (
