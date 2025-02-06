@@ -66,7 +66,8 @@ export const cards = [
       "1 workshop on job opportunities in the Metaverse",
       "Permission to enter the virtual Blackrose Club World",
     ],
-    position: "top-1/3  left-1/2 -translate-x-1/2", // Centered horizontally
+    position: "top-1/3 left-1/2 -translate-x-1/2",
+
   },
   {
     title: "Become a Shop Owner",
@@ -203,7 +204,7 @@ export const teamMembers = {
     role: "CFO",
     image: "/images/team4.png",
     positions:"top-1/4 right-80",
-  }
+  },
 ]}
 
 export const documentsSectionData = {
