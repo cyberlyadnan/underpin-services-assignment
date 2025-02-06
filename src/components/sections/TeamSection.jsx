@@ -59,8 +59,6 @@ export default function TeamSection({ teamMembers, title, desc }) {
                 width={150}
                 height={150}
                 className="z-20"
-                
-
               />
             </div>
           );

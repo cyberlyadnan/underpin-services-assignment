@@ -11,7 +11,7 @@ const HeroSection = ({heroData}) => {
         <h1 className="font-bold font-caudex text-[30px] md:text-[60px] leading-[40px] md:leading-[70px] text-white tracking-[0.005em] text-center">
           Seize Early <br className="hidden md:block" />
           Opportunities In The{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-themeColor">
             Metaverses{" "}
           </span>{" "}
           For <br className="hidden md:block" /> Business & Leisure {" "}

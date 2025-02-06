@@ -6,7 +6,7 @@ const MarketOpportunities = ({marketOpportunitiesData}) => {
   return (
     <section className="relative w-full flex items-center justify-center bg-cover bg-center px-6 py-6 md:py-12 bg-custom-gradient">
       {/* Background Images */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 pointer-events-none">
         <Image
           src="/images/vector.png"
           alt="Background"
@@ -26,7 +26,7 @@ const MarketOpportunities = ({marketOpportunitiesData}) => {
               alt="VR User"
               width={400}
               height={500}
-              className="rounded-lg p-1 w-[100%] h-auto object-cover"
+              className="rounded-lg p-1 w-[100%] hover:scale-105 h-auto object-cover"
             />
           </div>
         </div>

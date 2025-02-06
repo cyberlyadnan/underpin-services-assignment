@@ -7,7 +7,7 @@ export default function KeyServices({ services, servicesDetails }) {
   return (
     <section className="relative bg-custom-gradient w-full py-16 px-6 md:px-16 text-white overflow-hidden flex flex-col md:flex-row items-center md:items-start">
       {/* Background Images */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 pointer-events-none">
         <Image
           src="/images/bg-dotted-shapes.png"
           alt="Background"
@@ -16,7 +16,7 @@ export default function KeyServices({ services, servicesDetails }) {
           quality={100}
         />
       </div>
-      <div className="absolute left-0 bottom-0">
+      <div className="absolute left-0 bottom-0 pointer-events-none">
         <Image
           src="/images/thread.svg"
           alt="Decorative Lines"
@@ -72,7 +72,7 @@ export default function KeyServices({ services, servicesDetails }) {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="bg-[#D9D9D905] backdrop-blur-lg shadow-lg hover:scale-105 relative flex items-center gap-4 p-6 rounded-lg hover:border-green-500 transition"
+              className="bg-[#D9D9D905] hover:shadow-themeColor backdrop-blur-lg shadow-lg hover:scale-105 relative flex items-center gap-4 p-6 rounded-lg hover:border-green-500 transition"
             >
               <div className="bg-gray-700 p-3 rounded-full">{service.icon}</div>
               <div>
