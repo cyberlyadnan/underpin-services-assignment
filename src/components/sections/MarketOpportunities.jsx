@@ -15,7 +15,7 @@ const MarketOpportunities = ({marketOpportunitiesData}) => {
           quality={100}
         />
       </div>
-      <div className="absolute top-[33%] inset-0 backdrop-blur-lg bg-[#FFFFFF1A] z-10 h-[50%]"></div>
+      <div className="absolute top-[33%] inset-0 backdrop-blur-lg bg-[#FFFFFF1A] z-10 h-[70%] md:h-[50%]"></div>
       
       <div className="p-6 md:p-6 rounded-lg max-w-5xl w-full text-white flex flex-col md:flex-row items-center gap-6 md:gap-12">
         {/* Image Section */}

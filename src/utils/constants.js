@@ -175,20 +175,19 @@ export const teamMembers = {
   title:"Team Members",
   description:"We provide a secure and efficient key management solution, ensuring convenient access and peace of mind for individuals and businesses.Simplify your key handling with our reliable key duplication, storage, and tracking services.",
   teamMembers:[
-
   {
     name: "Nikolaus Schauersberger",
     desc: "We provide a secure and efficient key management solution, ensuring convenient access and peace of mind for individuals and businesses.",
     role: "Founder / CEO",
     image: "/images/team1.png",
-    positions:"md:bottom-20 md:left-40",
+    positions:"bottom-20 left-40",
   },
   {
     name: "John Doe",
     desc: "We provide a secure and efficient key management solution, ensuring convenient access and peace of mind for individuals and businesses.",
     role: "CTO",
     image: "/images/team2.png",
-    positions:"md:top-1/4 md:left-80",
+    positions:"top-1/4 left-80",
 
   },
   {
@@ -204,13 +203,7 @@ export const teamMembers = {
     role: "CFO",
     image: "/images/team4.png",
     positions:"top-1/4 right-80",
-  },
-  {
-    name: "Alice Johnson",
-    role: "CMO",
-    image: "/images/team5.png",
-    positions:"bottom-20 right-40",
-  },
+  }
 ]}
 
 export const documentsSectionData = {
