@@ -47,7 +47,6 @@ export const menuItems = [
 export const contactButtonText = "Become a Shop Owner"
 
 
-
 export const cards = [
   {
     title: "Become an Investor",
@@ -55,7 +54,7 @@ export const cards = [
       "This feature is not available to everyone, but you can access it by requesting us.",
     link: "#",
     list: [],
-    position: "top-10 left-0", // Top-left
+    position: "top-10 left-10", // Adjusted for correct placement
   },
   {
     title: "Become a Club Member",
@@ -66,8 +65,7 @@ export const cards = [
       "1 workshop on job opportunities in the Metaverse",
       "Permission to enter the virtual Blackrose Club World",
     ],
-    position: "top-1/3 left-1/2 -translate-x-1/2",
-
+    position: "top-1/2 left-1/3 -translate-x-1/2",
   },
   {
     title: "Become a Shop Owner",
@@ -79,7 +77,7 @@ export const cards = [
       "Get 20% of the profits you generate in your virtual shop",
       "Eligible for profit distribution from advertising and member pool",
     ],
-    position: "top-0 right-0", // Bottom-right
+    position: "top-0 right-10",
   },
 ];
 
