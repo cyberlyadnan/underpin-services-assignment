@@ -17,12 +17,12 @@ const MembershipSection = ({cards,buttonText="See Explained →"}) => {
       </div>
 
       {/* Content Wrapper */}
-      <div className="relative flex flex-col w-[100%] md:w-[100%] xl:w-[80%] 2xl:w-[70%] min-h-[70vh] h-auto md:h-[80vh] z-20 mx-auto">
+      <div className="md:relative flex flex-col w-[100%] md:w-[100%] xl:w-[80%] 2xl:w-[70%] min-h-[70vh] h-auto md:h-[80vh] z-20 mx-auto">
         {cards.map((card, index) => (
           <div
             key={index}
             className={`bg-[#162024] my-4 backdrop-blur-lg bg-white/10 p-6 rounded-xl shadow-lg border border-gray-700 transition hover:scale-105 
-                        relative md:absolute ${card.position} w-full md:w-80`}
+                        block md:absolute ${index != 1 && card.position} w-full md:w-80`}
           >
             <h3 className="text-xl w-[70%] font-bold font-orbitron">{card.title}</h3>
             <p className="text-gray-400 mt-2 font-poppins">{card.description}</p>
