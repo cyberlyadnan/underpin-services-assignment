@@ -15,6 +15,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Head from "next/head";
+import { footerData } from "../utils/constants";
 
 // Define Google Fonts using next/font
 const caudex = Caudex({
@@ -86,7 +87,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         <main className="bg-custom-gradient">{children}</main>
-        <Footer />
+        <Footer footerData={footerData}/>
       </body>
     </html>
   );

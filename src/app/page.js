@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { cards, documentsSectionData, heroData, marketOpportunitiesData, services, servicesDetails, teamMembers } from "../utils/constants";
+import { cards, documentsSectionData, heroData, marketOpportunitiesData, newsletterData, services, servicesDetails, teamMembers } from "../utils/constants";
 import Spinner from "../components/layout/Spinner";
 
 // Lazy Load Components
@@ -22,7 +22,7 @@ export default function Home() {
       <MarketOpportunities marketOpportunitiesData={marketOpportunitiesData} />
       <TeamSection teamMembers={teamMembers.teamMembers} title={teamMembers.title} desc={teamMembers.description} />
       <DocumentsSection headingPrefix={"Documents:"} documents={documentsSectionData.documents} title={documentsSectionData.title} desc={documentsSectionData.desc} />
-      <NewsletterSection />
+      <NewsletterSection newsletterData={newsletterData}/>
     </>
   );
 }

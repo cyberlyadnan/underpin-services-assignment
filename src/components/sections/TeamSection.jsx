@@ -16,13 +16,6 @@ export default function TeamSection({ teamMembers, title, desc }) {
     setActiveIndex((prev) => (prev - 1 + teamMembers.length) % teamMembers.length);
   };
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     nextSlide();
-  //   }, 5000); // Auto switch every 5 seconds
-  //   return () => clearInterval(interval);
-  // }, [activeIndex]);
-
   return (
     <section className="relative bg-custom-gradient text-white pt-16 pb-20 px-4 text-center overflow-hidden">
       {/* Background Elements */}
