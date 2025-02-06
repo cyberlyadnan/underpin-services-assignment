@@ -4,13 +4,13 @@ import dynamic from "next/dynamic";
 import { cards, documentsSectionData, heroData, marketOpportunitiesData, services, servicesDetails, teamMembers } from "../utils/constants";
 
 // Lazy Load Components
-const HeroSection = dynamic(() => import("@/components/sections/HeroSection"), { ssr: true });
-const MembershipSection = dynamic(() => import("@/components/sections/MembershipSection"), { ssr: true });
-const KeyServices = dynamic(() => import("@/components/sections/KeyServices"), { ssr: true });
-const MarketOpportunities = dynamic(() => import("@/components/sections/MarketOpportunities"), { ssr: true });
-const TeamSection = dynamic(() => import("@/components/sections/TeamSection"), { ssr: true });
-const DocumentsSection = dynamic(() => import("@/components/sections/DocumentsSection"), { ssr: true });
-const NewsletterSection = dynamic(() => import("@/components/sections/NewsletterSection"), { ssr: true });
+const HeroSection = dynamic(() => import("@/components/sections/HeroSection"), { ssr: false });
+const MembershipSection = dynamic(() => import("@/components/sections/MembershipSection"), { ssr: false });
+const KeyServices = dynamic(() => import("@/components/sections/KeyServices"), { ssr: false });
+const MarketOpportunities = dynamic(() => import("@/components/sections/MarketOpportunities"), { ssr: false });
+const TeamSection = dynamic(() => import("@/components/sections/TeamSection"), { ssr: false });
+const DocumentsSection = dynamic(() => import("@/components/sections/DocumentsSection"), { ssr: false });
+const NewsletterSection = dynamic(() => import("@/components/sections/NewsletterSection"), { ssr: false });
 
 export default function Home() {
   return (
