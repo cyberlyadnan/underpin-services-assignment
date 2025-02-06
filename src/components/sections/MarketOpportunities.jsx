@@ -19,7 +19,7 @@ const MarketOpportunities = ({marketOpportunitiesData}) => {
       
       <div className="p-6 md:p-6 rounded-lg max-w-5xl w-full text-white flex flex-col md:flex-row items-center gap-6 md:gap-12">
         {/* Image Section */}
-        <div className="relative z-20 w-full md:w-1/2 flex justify-end px-0 md:px-12">
+        <div className="relative z-20 w-full md:w-1/2 flex justify-between md:justify-end px-0 md:px-12">
           <div className="relative rounded-lg p-1">
             <Image
               src="/images/vr-user.png"
