@@ -2,12 +2,12 @@
 import Image from "next/image";
 import Tilt from "react-parallax-tilt";
 
-export default function DocumentsSection({ documents, title, desc }) {
+export default function DocumentsSection({ documents, title, desc,headingPrefix }) {
   return (
     <section className="px-[15%] mx-auto bg-custom-gradient text-white py-12 pb-20">
       <div className="text-center py-10">
         <h2 className="text-3xl font-orbitron font-bold text-white md:text-5xl">
-          Documents: <span className="text-themeColor">{title}</span>
+          {headingPrefix} <span className="text-themeColor">{title}</span>
         </h2>
         <p className="text-gray-400 mt-4 max-w-3xl font-poppins mx-auto">
           {desc}

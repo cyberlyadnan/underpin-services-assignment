@@ -9,12 +9,13 @@ const HeroSection = ({heroData}) => {
       <motion.div className="max-w-5xl mx-auto text-center">
         {/* Heading */}
         <h1 className="font-bold font-caudex text-[30px] md:text-[60px] leading-[40px] md:leading-[70px] text-white tracking-[0.005em] text-center">
-          Seize Early <br className="hidden md:block" />
-          Opportunities In The{" "}
+          {heroData.heading.split("-")[0]}{" "}
+          <br className="hidden md:block" />
+          {heroData.heading.split("-")[1]}{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-themeColor">
-            Metaverses{" "}
+            {heroData.heading.split("-")[2]}{" "}
           </span>{" "}
-          For <br className="hidden md:block" /> Business & Leisure {" "}
+          {heroData.heading.split("-")[3]} <br className="hidden md:block" />{heroData.heading.split("-")[4]} {" "}
         </h1>
 
         {/* Subtext */}

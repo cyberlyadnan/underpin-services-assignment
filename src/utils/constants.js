@@ -149,7 +149,8 @@ export const marketOpportunitiesData = {
 
 
 export const heroData = {
-  heading: "Seize Early Opportunities In The Metaverses For Business & Leisure",
+
+  heading: "Seize Early-Opportunities In The-Metaverses-For-Business & Leisure",
   subtext:
     "You can shop your favorite products, join and organize cultural and sports events, sell your products in your own metaverse, and gain yield in an innovative growth market.",
   buttonLinks: [
